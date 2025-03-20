@@ -11,6 +11,11 @@
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
 }
 
 
@@ -20,14 +25,18 @@
 
 .sidebar{
     background-color: var(--color-grey-dark-1);
-
+ 
     // flex-grow: 0;
     // flex-shrink: 0;
     // flex-basis: 18%; We use this to define flex width.
     flex: 0 0 18%; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view{
     background-color: #fff;
     flex: 1; //This would ake it grow as much as it can
-}
+} 
