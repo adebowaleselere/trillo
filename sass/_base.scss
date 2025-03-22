@@ -41,6 +41,14 @@ $test-gutter-horizontal: 2rem;
     --test-gutter-horizontal: 2rem;
 }
 
+/*Css variables do not work in media quesries so we have to use sass variables */
+
+$bp-largest: 75em; //1200px
+$bp-large: 68.75rem; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //900px
+$bp-smallest: 31.25em; //500px
+
 *{
     margin: 0;
     padding: 0;
@@ -55,6 +63,10 @@ $test-gutter-horizontal: 2rem;
 html{
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
+
+    @media only screen and (max-width:$bp-large) {
+        font-size: 50%;
+    }
 }
 
 body{
