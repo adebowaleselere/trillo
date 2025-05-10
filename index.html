@@ -17,6 +17,13 @@
 
                 <form action="#" class="search">
                     <input type="text" class="search__input" placeholder="Search Hotels">
+                    <ul class="search__results">
+                        <li class="search__items">Search Term 1</li>
+                        <li class="search__items">Search Term 2</li>
+                        <li class="search__items">Search Term 3</li>
+                        <li class="search__items">Search Term 4</li>
+                        <li class="search__items">Search Term 5</li>
+                    </ul>
 
                     <button class="search__button">
                         <svg class="search__icon">
@@ -38,10 +45,46 @@
                         </svg>
                         <span class="user-nav__notification">13</span>
                     </div>
-                    <div class="user-nav__user">
-                        <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Jonas</span>
+                    <div class="user-nav__user" >
+                        <img src="img/user.png" alt="User Photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Debo</span>
+                        
+                        <div class="user-nav__menu" >
+                            <ul class="user-nav__menu-nav">
+                                <li class="user-nav__menu-item">
+                                    <a href="#" class="user-nav__menu-link">
+                                        <svg class="user-nav__menu-icon">
+                                            <use xlink:href="img/sprite.svg#icon-cog"></use>
+                                        </svg>
+                                        <span class="user-nav__menu-text">
+                                            Settings
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="user-nav__menu-item">
+                                    <a href="#" class="user-nav__menu-link">
+                                        <svg class="user-nav__menu-icon">
+                                            <use xlink:href="img/sprite.svg#icon-globe"></use>
+                                        </svg>
+                                        <span class="user-nav__menu-text">
+                                            accesibility
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="user-nav__menu-item">
+                                    <a href="#" class="user-nav__menu-link">
+                                        <svg class="user-nav__menu-icon">
+                                            <use xlink:href="img/sprite.svg#icon-remove-user"></use>
+                                        </svg>
+                                        <span class="user-nav__menu-text">
+                                            Log out 
+                                        </span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    
                 </nav>
             </header>
             <div class="content">
@@ -89,12 +132,15 @@
                     <div class="gallery">
                         <figure class="gallery__item">
                             <img src="img/hotel-1.jpg" alt="Photo of Hotel 1" class="gallery__photo">
+                            <figcaption class="gallery__caption">Photo of Hotel 1</figcaption>
                         </figure>
                         <figure class="gallery__item">
                             <img src="img/hotel-2.jpg" alt="Photo of Hotel 2" class="gallery__photo">
+                            <figcaption class="gallery__caption">Photo of Hotel 2</figcaption>
                         </figure>
                         <figure class="gallery__item">
                             <img src="img/hotel-3.jpg" alt="Photo of Hotel 3" class="gallery__photo">
+                            <figcaption class="gallery__caption">Photo of Hotel 3</figcaption>
                         </figure>
                     </div>
 
